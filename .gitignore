@@ -4,4 +4,4 @@
 *.sqlite3
 *psy
 __pycache__
-.
+staticfiles
