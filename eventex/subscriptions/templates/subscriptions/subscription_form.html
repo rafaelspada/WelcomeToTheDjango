@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscrição</title>
+</head>
+<body>
+    <h1>Inscrição</h1>
+    <form action="." method="post">
+        {% csrf_token %}
+        <p>
+            <label for="{{ form.name.id_for_label }}">{{ form.name.label }}</label>
+            {{ form.name.errors }}
+            {{ form.name }}
+        </p>
+        <p>
+            <label for="{{ form.cpf.id_for_label }}">{{ form.cpf.label }}</label>
+            {{ form.cpf.errors }}
+            {{ form.cpf }}
+        </p>
+        <p>
+            <label for="{{ form.email.id_for_lavel }}">{{ form.email.label }}</label>
+            {{ form.email.errors }}
+            {{ form.email }}
+        </p>
+        <p>
+            <label for="{{ form.phone.id_for_label }}">{{ form.phone.label }}</label>
+            {{ form.phone.errors }}
+            {{ form.phone }}
+        </p>
+        <input type="submit" value="Enviar!"/>
+    </form>
+</body>
+</html>
