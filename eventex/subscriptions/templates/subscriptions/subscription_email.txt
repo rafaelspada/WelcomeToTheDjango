@@ -1,0 +1,8 @@
+Olá! Tudo bem?
+
+Muito obrigado por se inscrever.
+
+Nome: {{ name }}
+CPF: {{ cpf }}
+Email: {{ email }}
+Telefone: {{ phone }}
